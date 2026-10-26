@@ -218,3 +218,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Deepfake project dataset
+dataset/
+Dataset/
+dataset-deepfake/
+
+# Model checkpoints and trained weights
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+
+# Kaggle credentials
+kaggle.json
+.kaggle/
+
+# Experiment outputs
+runs/
+logs/
+outputs/
+
+# Local project results (optional)
+# Uncomment if generated results should not be committed
+# results/
+
