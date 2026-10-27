@@ -2,7 +2,11 @@
 
 ## Project Overview
 
-This project explores deepfake image detection using **InceptionResNetV1**, a deep neural network pretrained on the VGGFace2 dataset and adapted for binary image classification.
+> A deep learning project for binary classification of real and fake images using InceptionResNetV1 pretrained on VGGFace2, with transfer learning and partial fine-tuning.
+
+**Key result:** 91.60% test accuracy on 10,905 test images in one recorded experiment.
+
+**Technologies:** Python · PyTorch · facenet-pytorch · scikit-learn · Google Colab
 
 The model classifies input images into two categories: **Fake** and **Real**. The project uses transfer learning followed by partial fine-tuning to adapt pretrained image representations to the deepfake detection task.
 
@@ -50,6 +54,12 @@ The dataset contains real and fake images in each split. Dataset files are not i
 5. Evaluate the selected model on the held-out test set.
 
 ## Recorded Results
+
+### Confusion Matrix
+
+The confusion matrix summarizes the model's predictions on the held-out test set. Rows represent the true labels, while columns represent the predicted labels.
+
+![Final Test Confusion Matrix](results/confusion_matrix.png)
 
 One recorded experiment achieved **91.60% test accuracy** on 10,905 test images.
 
